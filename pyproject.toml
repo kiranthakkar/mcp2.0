@@ -1,0 +1,17 @@
+[project]
+name = "oci-object-storage-mcp"
+version = "0.1.0"
+description = "Remote FastMCP server for OCI Object Storage"
+requires-python = ">=3.11"
+dependencies = [
+  "agentconfigsafe[oci]>=0.2.0",
+  "fastmcp==4.0.0b1",
+  "oci>=2.0.0",
+  "pydantic>=2.0.0",
+]
+
+[project.scripts]
+oci-object-storage-mcp = "oci_object_storage_mcp.server:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,12 @@
+# Local environment and AgentSafe configuration.
+.env
+.env.*
+!.env.example
+.agentsafe/
+
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+*.egg-info/
+.DS_Store
